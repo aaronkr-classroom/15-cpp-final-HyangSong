@@ -57,12 +57,12 @@ int main() {
 			cout << "(G) ";
 		}
 		else if (dynamic_cast<International*>(students[i])) {
-			// It's an Undergrad student
+			// It's an International student
 			cout << "(I) ";
 		}
 		else {
-			// It's an International student
-			cout << "(I) ";
+			// It's an Undergraduate student
+			cout << "(U) ";
 		}
 		// 함수를 호출하려고 포인터인 student[i]를 역참조
 		cout << students[i]->getName()
